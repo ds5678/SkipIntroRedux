@@ -1,36 +1,22 @@
-﻿using Harmony;
-using MelonLoader;
+﻿using MelonLoader;
 using UnityEngine;
 
 namespace SkipIntroRedux
 {
-    public class Implementation : MelonMod
-    {
-        public override void OnApplicationStart()
-        {
-            Debug.Log($"[{Info.Name}] Version {Info.Version} loaded!");
-        }
-    }
-    // Skip Disclaimer 
-    // Seems like they obfuscate call to GAMEPLAY_Disclaimer 
-    // Anyway this will work but disclaimer will be seen (until all resources is loaded)
-    // So no clicks/keypress required 
-    [HarmonyPatch(typeof(BootUpdate), "Start")]
-    public class SkipIntroReduxSkipDisclaimer
-    {
-        public static void Postfix(BootUpdate __instance)
-        {
-            __instance.LoadMainMenu();
-        }
-    }
-
-    // Skip Intro 
-    [HarmonyPatch(typeof(Panel_MainMenu), "Enable")]
-    public class SkipIntroReduxSkipIntro
-    {
-        public static void Prefix(Panel_MainMenu __instance)
-        {
-            MoviePlayer.m_HasIntroPlayedForMainMenu = true;
-        }
-    }
+	public static class BuildInfo
+	{
+		public const string Name = "SkipIntroRedux"; // Name of the Mod.  (MUST BE SET)
+		public const string Description = "Skips to the main menu."; // Description for the Mod.  (Set as null if none)
+		public const string Author = "AlexTheRegent, ds5678"; // Author of the Mod.  (MUST BE SET)
+		public const string Company = null; // Company that made the Mod.  (Set as null if none)
+		public const string Version = "2.1.0"; // Version of the Mod.  (MUST BE SET)
+		public const string DownloadLink = null; // Download Link for the Mod.  (Set as null if none)
+	}
+	public class Implementation : MelonMod
+	{
+		public override void OnApplicationStart()
+		{
+			Debug.Log($"[{Info.Name}] Version {Info.Version} loaded!");
+		}
+	}
 }
