@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31005.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkipIntroRedux", "SkipIntroRedux.csproj", "{4A02CC24-0378-4B54-A06F-1ADFAA7FF1E5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{90F568F9-B33F-4633-8558-6206B01258C8}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkipIntroRedux", "SkipIntroRedux\SkipIntroRedux.csproj", "{67C19D08-FBE9-46C9-AA61-ED677063D9AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +18,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4A02CC24-0378-4B54-A06F-1ADFAA7FF1E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A02CC24-0378-4B54-A06F-1ADFAA7FF1E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A02CC24-0378-4B54-A06F-1ADFAA7FF1E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A02CC24-0378-4B54-A06F-1ADFAA7FF1E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C19D08-FBE9-46C9-AA61-ED677063D9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C19D08-FBE9-46C9-AA61-ED677063D9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C19D08-FBE9-46C9-AA61-ED677063D9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C19D08-FBE9-46C9-AA61-ED677063D9AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
